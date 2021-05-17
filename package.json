@@ -1,0 +1,28 @@
+{
+  "name": "this-is-afrikan",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "homepage": "https://afrikaans.herokuapp.com/",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "gsap": "^3.6.0",
+    "http-proxy-middleware": "^1.0.6",
+    "nodemon": "^2.0.4",
+    "react-transition-group": "^4.4.1",
+    "stripe": "^8.127.0",
+    "videojs": "^1.0.0"
+  },
+  "devDependencies": {}
+}

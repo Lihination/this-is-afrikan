@@ -1,0 +1,79 @@
+@import './../../styles/utilities';
+
+#privacy{
+    .content{
+        height: auto;
+        overflow-y: auto;
+        // height: 9.3vh;
+        .container{
+            padding: 0 50px;
+            margin-bottom: calc((47/900) * 100vh);
+        }
+        .indexes{
+            display: flex;
+            align-items: center;
+            margin-bottom: calc((47/900) * 100vh);
+            margin-left: -1rem;
+            // margin-bottom: 1rem;
+            li{
+                padding: 0 1rem;
+                height: 43px;
+                // width: 50px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                a{
+                    font-family: 'Montserrat';
+                    font-weight: 200;
+                    font-size: 12px;
+                    line-height: 14.63px;
+                    color: #6c6c6c;
+                }
+
+                &:last-child{
+                    a{
+                        font-weight: bolder;
+                        color: #000;
+                    }
+                }
+            }
+
+            svg{
+                width: 9px;
+                path{
+                    fill: #000;
+                }
+            }
+        }
+        h1{
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2vw;
+            line-height: calc( (47.77 / 900) * 100vh);
+            color: #000;
+            // letter-spacing: 0.2em;
+            // color: #fff;
+            margin: 0;
+        }
+
+        ul{
+            li{
+                margin: 0.25vw 0;
+                font-size: 1vw;
+            }
+        }
+
+        p{
+            // margin-bottom: calc((47/900) * 100vh);
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 1vw;
+            // padding: 0 50px;
+            margin: 0.5vw 0;
+            line-height: 1.2vw;
+            color: #000;
+            // color: #fff;
+        }
+    }
+}

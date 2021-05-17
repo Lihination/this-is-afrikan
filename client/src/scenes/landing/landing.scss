@@ -1,0 +1,207 @@
+body{
+    margin: 0px;
+}
+
+#landing{
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    
+
+    .back{
+        // background-image: url('https://res.cloudinary.com/thisisafrikan-com/image/upload/v1617967176/landing_froxz3.jpg');
+        // background-position: center;
+        // background-size: cover;
+        // filter: blur(1px);
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: -2;
+        overflow: hidden;
+
+        img{
+            right: -0vw;
+            top: 5vh;
+            position: absolute;
+            height: 100%;
+            transform: rotate(30deg);
+        }
+    }
+
+    .content{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // background-color: #000;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100vh;
+        width: 100vw;
+
+        .title{
+            text-transform: uppercase;
+        }
+
+        .started{
+            // margin-top: calc((176 / 900) * 100vh);
+            position: absolute;
+            bottom: 20vh;
+            color: #fff;
+            font-size: 1.2vw;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .middle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            h1{
+                text-align: center;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                width: 80%;
+                color: #fff;
+                // margin-top: calc((176 / 900) * 100vh);
+                font-size: calc( (52 / 1500) * 100vw );
+                line-height: calc( (80 / 900) * 100vh );
+            }
+
+            .buttons{
+                width: 70%;
+                display: flex;
+                align-items: center;
+                margin-top: 5vh;
+                justify-content: space-between;
+
+                .button{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    a{
+                        height: calc((120 / 900) * 100vh);
+                        width: calc((120 / 900) * 100vh);
+                        background: rgba(255, 255, 255, 0.7);
+                        border: 5px solid #E5E5E5;
+                        box-sizing: border-box;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 1vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg{
+                            width: calc((60 / 900) * 100vh);
+                            height: calc((60 / 900) * 100vh);
+                            
+                            path{
+                                
+                            }
+                        }
+                    }
+
+                    h4{
+                        font-size: 1.2vw;
+                        margin-top: 0.25vh;
+                        line-height: calc((24 / 900) * 100vh);
+                        color: #fff;
+                        font-weight: normal;
+                    }
+                }
+
+                .button:last-child{
+                    a{
+                        svg{
+                            fill: black;
+
+                            path{
+                                fill: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    .top{
+        // background-color: #000;
+        // height: 21.4vh;
+        height: 9.3vh;
+        // height: calc( (62.5 / 900) * 100vh );
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: 2;
+        .container{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .logo{
+                // padding-top: 4px;
+                // padding-left: 15vw;
+                // cursor: pointer;
+                
+                img{
+                    width: calc( (125 / 1500) * 100vw );
+                    height: calc( (62.5 / 900) * 100vh );
+                }
+            }
+
+            .right{
+                position: absolute;
+                right: 0px;
+                top: calc( (100% - ((31.25 / 900) * 100vh)) / 2 );
+                display: flex;
+                align-items: center;
+
+                .li-inner{
+                    background-color: #222;
+                }
+
+                .display{
+                    span{
+                        color: white;
+                    }
+                }
+
+                li{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        margin-left: 28.6px;
+                        color: #fff;
+                        font-family: 'Montserrat';
+                        font-size: 1vw;
+                        line-height: 14.63px;
+                        font-weight: 400;
+
+                        svg{
+                        width: 20px;
+                        height: 20px;
+                            margin-right: 3px ;
+                            path{
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

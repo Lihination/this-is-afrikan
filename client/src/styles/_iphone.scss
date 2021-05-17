@@ -1,0 +1,350 @@
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+
+    
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    #product{
+        .contents{
+            .container{
+                
+
+                .collapsible{
+                    margin-top: calc((26.68 / 900) * 100vh) !important;
+
+                    .top{
+                        width: calc(100% - calc((400 / 1500) * 100vw)) !important;
+                        height: 6vh !important;
+                        padding: 0 calc((200 / 1500) * 100vw) !important;
+                        font-size: 1.6vh !important;
+                    }
+                    .bottom{
+                        h4{
+                            font-size: 1.6vh !important;
+                            line-height: 2vh !important;
+                        }
+                        p{
+                            font-size: 1.2vh !important;
+                            line-height: 1.4vh !important;
+                        }
+                    }
+                }
+
+                
+            }//////
+        }
+    }
+}

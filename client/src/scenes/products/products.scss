@@ -1,0 +1,62 @@
+#products{
+    .content{
+        .container{
+            position: relative;
+            padding: 70px 0;
+            .indexes{
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                li{
+                    padding: 0 1rem;
+                    height: 43px;
+                    width: 100px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    a{
+                        font-family: 'Montserrat';
+                        font-weight: 200;
+                        font-size: 12px;
+                        line-height: 14.63px;
+                        color: #6c6c6c;
+                    }
+
+                    &:last-child{
+                        a{
+                            font-weight: normal;
+                            color: #000;
+                        }
+                    }
+                }
+
+                svg{
+                    width: 9px;
+                    path{
+                        fill: #000;
+                    }
+                }
+            }
+
+            .products{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 100px;
+
+                .product{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: calc(0.2 * 100vw);
+                    }
+
+                    a{
+                        width: 150px;
+                    }
+                }
+            }
+        } 
+    }
+}
