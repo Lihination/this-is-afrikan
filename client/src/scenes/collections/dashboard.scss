@@ -1,4 +1,4 @@
-@import './../../styles/utilities';
+
 #collections{
     .content{
         .container{
@@ -335,8 +335,8 @@
     
                                         .button{
                                             position: absolute;
-                                            bottom: 3.5rem;
-                                            right: 0.5rem;
+                                            bottom: 5.5vh;
+                                            right: 2.25vw;
                                         }
     
                                         .btn{
@@ -508,8 +508,8 @@
     
                                         .button{
                                             position: absolute;
-                                            bottom: 3.5rem;
-                                            right: 0.5rem;
+                                            bottom: 4.5vh;
+                                            right: 0.5vw;
                                         }
     
                                         .btn{
@@ -571,7 +571,7 @@
 
                         .wrapper{
                             width: 90%;
-                            height: 98%;
+                            height: 100%;
                             margin: 0;
                             display: flex;
                             flex-direction: column;
@@ -605,7 +605,7 @@
                                 font-weight: 300;
                                 text-align: justify;
                                 font-size: 1.9vh;
-                                margin-top: 1vw;
+                                margin-top: 0.75vw;
                                 line-height: calc((24 / 900) * 100vh);
                                 color: #fff;
 
@@ -696,8 +696,8 @@
     
                                         .button{
                                             position: absolute;
-                                            bottom: 3.5rem;
-                                            right: 0.5rem;
+                                            bottom: 5vh;
+                                            right: 0.5vw;
                                         }
     
                                         .btn{
@@ -915,8 +915,8 @@
 
                                     .button{
                                         position: absolute;
-                                        bottom: 4.75rem;
-                                        right: 0.5rem;
+                                        bottom: 7.75vh;
+                                        right: 0.5vw;
                                     }
 
                                     .btn{
@@ -1962,3 +1962,4 @@
         }
     }
 }
+@import './../../styles/utilities';

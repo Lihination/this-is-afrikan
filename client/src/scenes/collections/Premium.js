@@ -96,7 +96,7 @@ export class Premium extends Component {
                         </div>
 
                         <div className="countdown">
-                            <h4><b>One-pair Edition Only</b> Available For:</h4>
+                            <h4><b>Limited Only Available For:</b></h4>
                             <ul>
                                 <li>
                                     <div className="value">

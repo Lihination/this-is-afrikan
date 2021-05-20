@@ -240,9 +240,11 @@
         }
         .content{
             .started{
+                bottom: 15vh !important;
                 font-size: 1.2vh !important;
             }
             .middle{
+                margin-top: 17vh;
                 .title{
                     font-size: calc( (36 / 900) * 100vh );
                     line-height: calc( (80 / 900) * 100vh );
@@ -476,6 +478,7 @@
                 left: 0;
                 .wrapper{
                     .top{
+                        margin-top: -2vh !important;
                         // padding: 0 1rem;
                         h1{
                             text-align: left;
@@ -486,7 +489,7 @@
                             text-align: left;
                             padding: 0 0.5rem;
                             font-size: 2vh;
-                            width: 60vw;
+                            width: 50vw;
                             line-height: 3vh;
 
                             br{
@@ -774,6 +777,7 @@
                     ul{
                         li{
                             .value{
+                                border-radius: 5px !important;
                                 width: 4vh;
                                 height: 4vh;
 
@@ -891,18 +895,20 @@
                         }
 
                         .premium-design{
+                            overflow: hidden !important;
                             .back{
                                 img{
                                     width: 100vw !important;
                                     height: 50vh !important;
-                                    margin-top: 20vh;
+                                    // margin-top: 20vh;
+                                    opacity: 0.8;
                                 }
                             }
                             .products{
                                 .product{
                                     .button{
                                         position: absolute;
-                                        top: 4.5vh;
+                                        top: 5.5vh;
                                         bottom: auto !important;
                                         right: 0.5rem;
                                     }
@@ -912,6 +918,7 @@
 
                         .defy-design{
                             .back{
+                                background-position: 80% 80% !important;
                                 img{
                                     width: auto !important;
                                     height: 50vh !important;
@@ -933,12 +940,17 @@
                         .upcoming-design{
                             width: 100vw;
                             .products{
+                                // width: 100%;
                                 .product{
+                                    width: 25vw !important;
+                                    img{
+                                        width: 100% !important;
+                                    }
                                     .button{
                                         position: absolute;
-                                        bottom: 4.5vh !important;
+                                        bottom: 3.5vh !important;
                                         // bottom: auto !important;
-                                        right: -1vw !important;
+                                        right: 1vw !important;
                                     }
                                 }
                             }
@@ -1100,6 +1112,8 @@
                 position: absolute;
                 // height: auto;
             }
+
+            
             
             .image-slider{
                 width: 100%;
@@ -1172,13 +1186,13 @@
                 width: 100% !important;
                 // margin: 0 !important;
                 .left-arrow{
-                    height: 40vh !important;
+                    height: 30vh !important;
                     width: calc((50/ 900) * 100vh);
                     left:  calc((0/ 900) * 100vh) !important;
                 }
     
                 .right-arrow{
-                    height: 40vh !important;
+                    height: 30vh !important;
                     width: calc((50/ 900) * 100vh);
                     right: calc(( 0/ 900) * 100vh) !important;
                 }
@@ -1200,20 +1214,22 @@
                     }
                 }
                 .product-top{
-                    min-height: 40vh !important;
+                    min-height: 30vh !important;
                     width: 100% !important;
                     h4{
+                        bottom: -5.5vh !important;
                         font-size: 1.6vh !important;
                     }
                     h3{
+                        bottom: -7.5vh !important;
                         font-size: 1.4vh !important;
                     }
                     .image-slider{
                         width: 100% !important;
-                        height: 40vh !important;
+                        height: 30vh !important;
 
                         .product-img{
-                            height: 40vh !important;
+                            height: 30vh !important;
                             min-width: 100% !important;
                             background-position: 35% 95% !important;
                         }
@@ -1604,6 +1620,13 @@
 
                             h4{
                                 font-size: 1.6vh !important;
+                            }
+
+                            .button{
+                                svg{
+                                    width: 4vh !important;
+                                    height: 4vh !important;
+                                }
                             }
 
                             a:last-child {

@@ -124,7 +124,7 @@
         // background-color: #f5f5f5;
 
         .container{
-            width: 60vw;
+            width: 55vw;
             padding-bottom: 5vh;
             margin: auto;
             position: relative;
@@ -238,6 +238,7 @@
                 // overflow: hidden;
                 // border-radius: 9px;
                 justify-content: flex-end;
+                margin-bottom: 7.5vh;
 
                 h5{
                     position: absolute;
@@ -280,8 +281,9 @@
                 .image-slider{
                     display: flex;
                     height: 55vh;
-                    width: 60vw;
+                    width: 55vw;
                     left: 0;
+                    border-radius: 5px;
                     overflow: hidden;
                     position: absolute;
 
@@ -290,7 +292,7 @@
                         // border-radius: 9px;
                         z-index: -1;
                         top: 0vh;
-                        // background-position: 85% 95% !important;
+                        background-position: 85% 85%;
                         // background-size: cover !important;
                         // min-width: calc((1152 / 1500) * 100vw);
                         min-width: 100%;
@@ -304,7 +306,9 @@
                 
                     h4{
                         font-size: 1.2vw;
-                        margin-top: 5vh;
+                        position: absolute;
+                        // margin-top: 25vh;
+                        bottom: -7.5vh;
                         color: black;
                         font-weight: bold;
                         font-family: "Montserrat";
@@ -331,7 +335,8 @@
 
                     h3{
                         font-size: 1.2vw;
-                        margin-bottom: 1vh;
+                        bottom: -11vh;
+                        position: absolute;
                         color: black;
                         font-weight: normal;
                         
@@ -350,6 +355,11 @@
                 .btn{
                     width: calc((100% / 3) - 1vw);
                     margin-top: 0;
+                    svg{
+                        width: 2vw;
+                        height: 2vw;
+                        margin-left: 1vw;
+                    }
                 }
                 p{
                     font-size: 1.2vw;
@@ -680,8 +690,12 @@
 
                         .button{
                             position: absolute;
-                            bottom: 2rem;
+                            bottom: 3rem;
                             right: 1rem;
+                            svg{
+                                width: 4vw;
+                                height: 4vw;
+                            }
                         }
     
                         a:last-child{

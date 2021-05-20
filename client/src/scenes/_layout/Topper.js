@@ -192,12 +192,12 @@ export class Topper extends Component {
                                     </li>
                             }
                             <li><a target="track" href="https://mydhl.express.dhl/ng/en/tracking.html#/track-by-number" onClick={(e) => {}}><PackageLogo />Track my order</a> </li>
-                            <li><a onClick={() => this.props.openCart()} href="#"><ShoppingbagLogo />Shopping bag</a> </li>
+                            <li><a onClick={() => this.props.openCart()} ><ShoppingbagLogo />Shopping bag</a> </li>
                             
                         </ul>
                         <ul className="right">
                             <li><a target="track" href="https://mydhl.express.dhl/ng/en/tracking.html#/track-by-number" onClick={(e) => {}}><PackageLogo />Track my order</a> </li>
-                            <li><a onClick={() => this.props.openCart()} href="#"><ShoppingbagLogo />Shopping bag</a> </li>
+                            <li><a onClick={() => this.props.openCart()} ><ShoppingbagLogo />Shopping bag</a> </li>
                             {
                                 this.state.signIn ? <Fragment>
                                     <UserDropDown history={this.props.history} />

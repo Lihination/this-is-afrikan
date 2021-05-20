@@ -257,12 +257,12 @@
                 // height: calc(100% - 202px);
                 height: 70%;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 // align-items: center;
                 flex-direction: column;
 
                 .top{
-                    
+                    margin-top: 4vh;
                     h1{
                         font-family: 'Montserrat';
                         text-transform: uppercase;
@@ -270,9 +270,10 @@
                         font-size: calc( (52 / 1500) * 100vw);
                         line-height: calc( (47.77 / 900) * 100vh);
                         color: #f5f5f5;
+                        // margin-top: -20vh;
                         // letter-spacing: 0.2em;
                         // color: #fff;
-                        margin: 0;
+                        margin-bottom: 0;
                     }
 
                     p{

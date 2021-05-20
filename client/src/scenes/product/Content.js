@@ -29,6 +29,7 @@ import BoxIcon from './../utilities/BoxIcon';
 import Donation from './Donation';
 import SizeDropdown from './SizeDropdown';
 import DownArrow from '../utilities/DownArrow';
+import OracleLogo from './../utilities/OracleLogo';
 import { browserHistory } from 'react-router';
 import shortid from 'shortid';
 
@@ -275,6 +276,17 @@ export class Content extends Component {
         var _isMounted = true;
         // window.history.pushState(null, null, window.location.href);
 
+        setInterval(function () {
+            t.setState({
+                id: t.state.id == 5 ? 1 : t.state.id + 1,
+                button: true
+            }, function () {
+                $(".product-top .image-slider").animate({ scrollLeft: $(".product-top .image-slider").outerWidth() * (t.state.id - 1) }, 500);
+                
+            })
+
+        }, 11000)
+
 
         var countDownDate;
         var url_string = window.location.href; //window.location.href
@@ -339,7 +351,7 @@ export class Content extends Component {
         $(".color-variants ul li").removeClass("active");
         $(e.target).addClass("active");
         this.setState({
-            imageId: i,
+            // imageId: i,
             color: this.state.color == "White" ? "Off-white" : "White",
         })
     }
@@ -356,8 +368,6 @@ export class Content extends Component {
     addDonation = (e) => {
 
     }
-
-
 
     addWarranty = (e) => {
         var warranty = {};
@@ -485,6 +495,7 @@ export class Content extends Component {
         let variantImage, boxImage, laceImage = {};
 
         variantImage = this.state.selectedVariantImage || Array(Object(product).images)[0]
+        console.log(variantImage)
         // boxImage = Array(Object(boxes).images)[0];
         // laceImage = Array(Object(laces).images)[0];
         // if(boxes!=undefined){
@@ -587,9 +598,9 @@ export class Content extends Component {
                         <div className="countdown">
                             {
                                 d=="upcoming collection" ?
-                                <h4 className="disclaimer"><b>One-pair Edition Only</b> Preorder Before Deadline Below:</h4>
+                                <h4 className="disclaimer"><b>One-pair Edition Only Preorder Before Deadline Below:</b></h4>
                                 :
-                                <h4 className="disclaimer"><b>One-pair Edition Only</b> Available For:</h4>
+                                <h4 className="disclaimer"><b>One-pair Edition Only Available For:</b></h4>
                             }
                                     {/* <h4 className="disclaimer"><b>One-pair Edition Only</b> Available For:</h4> */}
                                     
@@ -631,16 +642,19 @@ export class Content extends Component {
                                 <RightArrow />
                             </a>
 
-                            
+                            {
+                                d=="Defy Odds" ? 
+                                 <h5>Only one pair made!</h5>: null
+                            }
 
                             <div className="image-slider">
-                                <h5>Only one pair made!</h5>
+                                
                                 {
                                     variantImage == undefined ? null :
                                         variantImage.map((x, i) => (
                                             <div data-id={shortid.generate()} style={{
-                                                backgroundImage: `url("${variantImage == undefined ? "" : variantImage[this.state.imageId == 2 ? variantImage.length - 1 : i].src}")`,
-                                                backgroundPosition: d == "upcoming collection" ? "85% 75%" : "45% 100%",
+                                                backgroundImage: `url("${variantImage == undefined ? "" : variantImage[i].src}")`,
+                                                // backgroundPosition:  "85% 85%",
                                                 backgroundSize: "cover",
                                             }} className="product-img" alt="" />
                                         ))
@@ -789,7 +803,7 @@ export class Content extends Component {
                                                         </p>
                                                         :
                                                         Object(product).title == "Defy Leopard" ?
-                                                            <p>Laughing Leopard is available in white leather. Premium genuine leather forms the entire body of this exquisitely handcrafted pair of shoes from our one of a kind Defy Odds Adventure Collection. The toe cap, toe box and tongue of the shoe adorn this genuine leather form with the luxurious fabric once reserved exclusively for an ancient African nobility. The designs on the fabric were carefully selected with potent embellishments of the laughing leopard motif representing your unique personality type within this African worldview. These shoes represent the finest attention to detail luxury of African craftsmanship.
+                                                            <p>Defy Leopard is available in white leather. Premium genuine leather forms the entire body of this exquisitely handcrafted pair of shoes from our one of a kind Defy Odds Adventure Collection. The toe cap, toe box and tongue of the shoe adorn this genuine leather form with the luxurious fabric once reserved exclusively for an ancient African nobility. The designs on the fabric were carefully selected with potent embellishments of the laughing leopard motif representing your unique personality type within this African worldview. These shoes represent the finest attention to detail luxury of African craftsmanship.
                                     <ul>
                                                                     <li>Finest made in African hand craftsmanship</li>
                                                                     <li>Premium genuine leather</li>
@@ -807,7 +821,7 @@ export class Content extends Component {
 
                                                             </p> :
                                                             Object(product).title == "Defy Python" ?
-                                                                <p>Coiled Python is available in white leather. Premium genuine leather forms the entire body of this exquisitely handcrafted pair of shoes from our one of a kind Defy Odds Adventure Collection. The toe cap, toe box and tongue of the shoe adorn this genuine leather form with the luxurious fabric once reserved exclusively for an ancient African nobility. The designs on the fabric were carefully selected with potent embellishments of the coiled python motif representing your unique personality type within this African worldview. These shoes represent the finest attention to detail luxury of African craftsmanship.
+                                                                <p>Defy Python is available in white leather. Premium genuine leather forms the entire body of this exquisitely handcrafted pair of shoes from our one of a kind Defy Odds Adventure Collection. The toe cap, toe box and tongue of the shoe adorn this genuine leather form with the luxurious fabric once reserved exclusively for an ancient African nobility. The designs on the fabric were carefully selected with potent embellishments of the coiled python motif representing your unique personality type within this African worldview. These shoes represent the finest attention to detail luxury of African craftsmanship.
                                     <ul>
                                                                         <li>Finest made in African hand craftsmanship</li>
                                                                         <li>Premium genuine leather</li>
@@ -827,7 +841,7 @@ export class Content extends Component {
                                                                 :
 
                                                                 Object(product).title == "Defy Crocodile" ?
-                                                                    <p>Hidden Crocodile is available in white leather. Premium genuine leather forms the entire body of this exquisitely handcrafted pair of shoes from our one of a kind Defy Odds Adventure Collection. The toe cap, toe box and tongue of the shoe adorn this genuine leather form with the luxurious fabric once reserved exclusively for an ancient African nobility. The designs on the fabric were carefully selected with potent embellishments of the clawed crocodile motif representing your unique personality type within this African worldview. These shoes represent the finest attention to detail luxury of African craftsmanship.
+                                                                    <p>Defy Crocodile is available in white leather. Premium genuine leather forms the entire body of this exquisitely handcrafted pair of shoes from our one of a kind Defy Odds Adventure Collection. The toe cap, toe box and tongue of the shoe adorn this genuine leather form with the luxurious fabric once reserved exclusively for an ancient African nobility. The designs on the fabric were carefully selected with potent embellishments of the clawed crocodile motif representing your unique personality type within this African worldview. These shoes represent the finest attention to detail luxury of African craftsmanship.
                                     <ul>
                                                                             <li>Finest made in African hand craftsmanship</li>
                                                                             <li>Premium genuine leather</li>
@@ -877,7 +891,7 @@ export class Content extends Component {
                                         <p><b>Or</b></p>
                                     <Link className="btn btn-black" to={{
                                         pathname: "/defy",
-                                    }}>Discover Something More</Link>
+                                    }}>Defy Odds <OracleLogo /></Link>
                                     
                                     </Fragment>
                                     : 
@@ -967,7 +981,7 @@ export class Content extends Component {
                                         d == "kalabar collection" ?
                                             null :
                                             <div className="warranty">
-                                                <h3>1 Year Warranty <Link to="policy">(See more)</Link></h3>
+                                                <h3>Add 1 Year Warranty <Link to="policy">(See more)</Link></h3>
                                                 {/* <p>Click here to add a 1 year warranty to your package</p> */}
                                                 <ul>
                                                     <li onClick={(e) => { this.addWarranty(e) }}>
@@ -1053,7 +1067,13 @@ export class Content extends Component {
                                                 <p>${parseInt(Object(Object(Array(Object(boxes).variants)[0])[0]).price)}</p>
                                             </div>
 
-
+                                            <div className="text">
+                                            <div className="img">
+                                            <img onClick={(e) => { e.preventDefault(); this.showWarranty() }} src={"https://res.cloudinary.com/thisisafrikan-com/image/upload/v1621073050/truck_1_xymz6p.png"} alt="" />
+                                                <a href="" onClick={(e) => { e.preventDefault(); this.showWarranty() }} className="see-more"><SeeMoreIcon /></a>
+                                            </div>
+                                            <small>Free shipping</small>
+                                        </div>
                                         </div>
                                         :
                                         d == "Defy Odds" ?

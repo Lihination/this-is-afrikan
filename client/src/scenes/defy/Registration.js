@@ -337,17 +337,7 @@ export class Registration extends Component {
                     last_name: input["last_name"],
                     email: input["email"],
                     phone: input["phone"],
-                    education: input["education"]== undefined? null: input["education"],
-                    occupation: input["occupation"]== undefined? null: input["occupation"],
-                    gender: input["gender"],
-                    address: input["address"] + " "+input["address1"],
-                    age: input["age"]== undefined? null: input["age"],
-                    race: input["race"]== undefined? null: input["race"],
-                    income: input["income"]== undefined? null: input["income"],
-                    // ethnicity: input["ethnicity"],
-
-                    haveBid: false,
-                    
+                    haveBid: false, 
                     user: data.user.uid
                 }).then(() => {
                     this.props.change("questions");

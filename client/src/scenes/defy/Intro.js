@@ -31,8 +31,8 @@ export class Intro extends Component {
                             </li>
                             <div className="space"></div>
                             <li>
-                                <b>Gain access to exclusive private collections</b> designed entirely to appeal to your
-personality. Some of which are not available through our public collections.
+                                <b>Gain access to exclusive private shoe collections</b> designed entirely to appeal to your
+personality. Some of which are not available through our public shoe collections.
                             </li>
                             <div className="space"></div>
                             <li>

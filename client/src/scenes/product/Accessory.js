@@ -105,19 +105,21 @@ export class Accessory extends Component {
         })
     }
     addtoCart = (e) => {
-        if (this.state.variantId == "") {
-
-        }
-        else {
+        
             if (this.props.accessory == "laces") {
+                if (this.state.variantId == "") {
+
+                }
+                else {
                 this.props.addVariantToCart(this.state.variantId, 1);
                 this.props.closePopup();
+                }
             }
             else if (this.props.accessory == "box") {
                 this.props.addVariantToCart(this.props.boxid, 1);
                 this.props.closePopup();
             }
-        }
+        
     }
 
     onMouseEnter = (i) => {
@@ -322,7 +324,7 @@ export class Accessory extends Component {
                             {
                                 this.props.collection == "Rustic Collection" ?
                                     <div className="accessory-buttons">
-                                        <a href="" onClick={(e) => { e.preventDefault(); this.addtoCart(e) }} 
+                                        <a onClick={(e) => { e.preventDefault(); this.addtoCart(e) }} 
                                         className={`btn btn-black urban`}>
                                             {this.props.collection=="upcoming collection"?"Preorder":
                                              "Add To My Shopping Bag"}</a>

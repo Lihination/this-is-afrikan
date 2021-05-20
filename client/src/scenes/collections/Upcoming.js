@@ -97,7 +97,7 @@ export class Upcoming extends Component {
                             </p> */}
                         </div>
                         <div className="countdown">
-                            <h4><b>One-pair Edition Only</b> Preorder Before Deadline Below:</h4>
+                            <h4><b>One-pair Only Preorder Before Deadline Below:</b></h4>
                             <ul>
                                 <li>
                                     <div className="value">
