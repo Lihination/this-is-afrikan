@@ -16,19 +16,65 @@ export class NewDesign extends Component {
                 <div className="gallery">
                     <div className="container">
                         <h1>You are a coiled python</h1>
-                        <SnakeOverview/>
-                        {/* <div className="columns">
+                        {/* <SnakeOverview/> */}
+                        <div className="columns">
+                            <div className="column">
+                                {/* <a onClick={()=>this.openPDF()}><img src={"https://res.cloudinary.com/thisisafrikan-com/image/upload/v1615215667/snake_icon_ntqbhr.png"} alt=""/></a> */}
+                                <h4>The Pictograph</h4>
+                                <p>
+                                    The pictograph of the
+                                    archetype is coiled as a
+                                    symbol of python’s crushing
+                                    power which is depicted in
+                                    its multiple loops.
+                                    The ideographic
+                                    representation of these
+                                    loops also echo the cyclical
+                                    nature of life. 
+                                </p>
+                            {/* <a onClick={()=>this.openPDF()} className="btn btn-green">Full Report</a> */}
+                        </div>
+                            <div className="column">
+                                <h4>Divination</h4>
+                                <p>
+                                You are the Coiled Python.
+                                The Coiled Python is the
+                                primary symbol for great
+                                intuition, wisdom, and
+                                preparation.
+                                </p>
+                            </div>
+                            <div className="column">
+                                <h4>Your Powers</h4>
+                                <p>
+                                    <ul>
+                                        <li>Intuition,</li>
+                                        <li>Preparation,</li>
+                                        <li>Greed,</li>
+                                        <li>Self absorbed,</li>
+                                        <li>Risk adverse.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div className="column">
+                                <h4>Defy Odds Shoes</h4>
+                                <p>
+                                We’ve designed a pair of
+                                shoes to provide a physical
+                                reminder of your distinct
+                                personality traits within an
+                                ancient African historical
+                                context to support your defy
+                                odds journey.
+                                </p>
+                            </div>
                             <div className="column"></div>
-                            <div className="column"></div>
-                            <div className="column"></div>
-                            <div className="column"></div>
-                            <div className="column"></div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
 
                 <div className="button">
-                    <a href="" className="btn btn-black">Get the complete report</a>
+                    <a href="" className="btn btn-black">Buy Full report</a>
                 </div>
 
                 <div className="collection-section">         
