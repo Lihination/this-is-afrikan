@@ -9,81 +9,28 @@
                     margin: calc((14 / 900) * 100vh) 0;
                 }
 
-                .options{
-                    display: grid;
-                    grid-template-columns: 17vw 17vw 17vw 17vw  ;
-                    grid-gap: 1vw;
-                    margin-left: -0.8vw;
+                .columns{
+                    display: flex;
+                    height: calc((500 / 900) * 100vh);
+                    width: calc(100vw - ((50 / 1500) * 100vw));
+                    overflow-x: auto;
 
-                    .option{
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        height: 40vh;
-                        justify-content: space-between;
-                        padding: 23px 18px;
-                        background: rgba(0, 81, 57, 0.7);
-                        border-radius: 5px;
-                        img{
-                            width: 40px;
-                            height: 40px;
-                            margin-bottom: 0.5rem;
-                        }
-
-                        .shoe{
-                            width: 50px;
-                            height: 50px;
-                            margin-bottom: 0;
-                        }
+                    .column{
+                        min-width: calc((320 / 1750) * 100vw);
+                        height: calc((500 / 900) * 100vh);
+                        background: #E5E5E5;
+                        border-radius: 9px;
+                        margin-right: calc((10 / 1500) * 100vw);
 
                         h4{
-                            font-family: "Montserrat";
-                            font-style: normal;
-                            width: 100%;
-                            color: #fff;
-                            text-align: center;
-                            font-weight: bold;
-                            font-size: 1.2vw;
-                            line-height: 1.3vw;
+                            padding: 19px;
                         }
 
                         p{
-                            width: 90%;
-                            height: 307px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin-top: 2px;
-                            font-size: 1vw;
-                            line-height: calc((24 / 900) * 100vh);
-                            // font-weight: bold;
-                            text-align: center;
-                            color: #FFFFFF;
-                        }
-
-                        ul{
-                            list-style: disc;
-                            width: 100%;
-                            margin-left: 1vw;
-
-                            li{
-                                text-align: left;
-                            }
-                        }
-
-                        .btn{
-                            width: calc((300 / 1500) * 100vw);
-                            // height: 50px;
-                            border-radius: 5px;
-                            background: #000;
-                            display: flex;
-                            font-weight: bold;
-                            font-size: 12px;
-                            line-height: 15px;
-                            align-items: center;
-                            justify-content: center;
+                            padding: 10px;
                         }
                     }
+
                 }
             }
         }
@@ -93,42 +40,48 @@
             margin-bottom: calc((47 / 900) * 100vh);
             display: flex;
             justify-content: center;
-            .btn{
-                // border-radius: 50px;
-            }
         }
 
         .collection-section{
-            h2{
-                padding-left: 50px;
-                font-size: 1.2vw;
-                line-height: 29.26px;
-                margin-bottom: calc((47 / 900) * 100vh);
-            }
-
+        
             .collections{
                 position: relative;
                 width: 100vw;
                 height: calc((723 / 900) * 100vh);
                 // padding-top: 50px;
+                .cardboards{
+                    display: flex;
+                    justify-content: space-evenly;
+                    position: relative;
+                    top: 20%;
+                    // padding: 8px;
 
-                small{
-                    position: absolute;
-                    top: 50px;
-                    left: 50px;
-                    font-size: 1vw;
-                }
+                    .card{
+                        background: #fff;
+                        border-radius: 6px;
+                        width: 25%;
+                    }
+                    .label{
+                        background: #E5E5E5;
+                        border-radius: 0 0 6px 6px;
+                    }
 
-                h2{
-                    font-size: 1vw;
-                    margin-left: 50px;
+                    .btn {
+                        background: black;
+                        border-radius: 26px;
+                        border: none;
+                        outline: none;
+                        color: #fff;
+                        font-size: 8px;
+                        width: 100px;
+                    }
                 }
 
                 .collection{
-                    display: none;
-                }
+                    // display: none;
 
-                .ticks{
+                    
+
                     position: absolute;
                     bottom: calc((80 / 900) * 100vh);
                     width: 100vw;
@@ -153,6 +106,7 @@
                     position: absolute;
                     top: 0;
                     overflow: hidden;
+                    margin: 20px;
                     left: 0;
                     width: 100vw;
                     height: 100%;
@@ -198,26 +152,6 @@
                         }
                     }
                 }
-
-                .background{
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    background-color: #fff0E0;
-                    z-index: -2;
-                    padding-left: calc((191/1500) * 100vw);
-                    display: flex;
-                    align-items: center;
-
-                    .inner{
-                        width: calc((500 / 900) * 100vh);
-                        height: calc((500 / 900) * 100vh);
-                        border-radius: 25px;
-                        background-color: #FFE2C5;
-                    }
-                }
-
-
 
                 .left-arrow{
                     position: absolute;
