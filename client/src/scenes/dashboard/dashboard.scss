@@ -3,31 +3,44 @@
     .new-design{
         .gallery{
             .container{
+                
                 h1{
                     font-size: 1.2vw;
                     line-height: 29.26px;
                     margin: calc((14 / 900) * 100vh) 0;
+                    
                 }
 
                 .columns{
                     display: flex;
-                    height: calc((500 / 900) * 100vh);
-                    width: calc(100vw - ((50 / 1500) * 100vw));
+                    height: calc((500 / 600) * 100vh);
+                    width: calc(100vw - ((50 / 1500) * 70vw));
                     overflow-x: auto;
+                    background: #F2F2F2;
+                    opacity: 0.9;
+                    border-radius: 6px;
+                    padding: 10px;
+                    
+
 
                     .column{
                         min-width: calc((320 / 1750) * 100vw);
-                        height: calc((500 / 900) * 100vh);
-                        background: #E5E5E5;
+                        height: calc((500 / 700) * 55vh);
+                        background: #FFE2C5;
                         border-radius: 9px;
+                        justify-content: center;
                         margin-right: calc((10 / 1500) * 100vw);
+                        margin-top: 8px;
+                        opacity: 0.8;
 
                         h4{
-                            padding: 19px;
+                            padding: 10px;
+                            text-align: center;
                         }
 
                         p{
-                            padding: 10px;
+                            padding: 6px;
+                            text-align: center;
                         }
                     }
 
@@ -36,8 +49,9 @@
         }
 
         .button{
-            margin-top: calc((43 / 900) * 100vh);
-            margin-bottom: calc((47 / 900) * 100vh);
+            position: absolute;
+            top: 95%;
+            right: 35%;
             display: flex;
             justify-content: center;
         }
@@ -49,22 +63,22 @@
                 width: 100vw;
                 height: calc((723 / 900) * 100vh);
                 // padding-top: 50px;
-                .cardboards{
+                .shops{
                     display: flex;
                     justify-content: space-evenly;
                     position: relative;
-                    top: 20%;
+                    left: 10%;
                     // padding: 8px;
 
-                    .card{
-                        background: #fff;
-                        border-radius: 6px;
-                        width: 25%;
-                    }
-                    .label{
-                        background: #E5E5E5;
-                        border-radius: 0 0 6px 6px;
-                    }
+                    // .shop{
+                    //     background: #fff;
+                    //     border-radius: 6px;
+                    //     width: 25%;
+                    // }
+                    // .label{
+                    //     background: #E5E5E5;
+                    //     border-radius: 0 0 6px 6px;
+                    // }
 
                     .btn {
                         background: black;

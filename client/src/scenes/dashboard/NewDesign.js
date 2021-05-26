@@ -5,8 +5,10 @@ import React, { Component } from 'react';
 // import LeftArrow from './../utilities/LeftArrow';
 // import RightArrow from './../utilities/RightArrow';
 import SnakeOverview from "./SnakeOverview"
+import Leopard from "../../images/Leopard_back.png"
 import marketclip from './video/marketclip.mp4'
-import python from '../../images/Python.png'
+import umbrella from './images/market-stall.png'
+import shoe from './images/shoe.png'
 
 
 export class NewDesign extends Component {
@@ -14,67 +16,80 @@ export class NewDesign extends Component {
         return (
             <div className="new-design">
                 <div className="gallery">
-                    <div className="container">
-                        <h1>You are a coiled python</h1>
+                    <div className="container">                        
+                        <h1>You are a Laughing Leopard</h1>
                         {/* <SnakeOverview/> */}
                         <div className="columns">
+                        <img src={Leopard} alt="leopard"
+                            style={{
+                                position: "absolute",
+                                top: "50%",
+                                left: "50%",
+                                width: "40%",
+                                height: "83%",
+                                transform: "translate(25%, -27%)",
+                                zIndex: "-1"
+    
+                            }}
+                        />
                             <div className="column">
                                 {/* <a onClick={()=>this.openPDF()}><img src={"https://res.cloudinary.com/thisisafrikan-com/image/upload/v1615215667/snake_icon_ntqbhr.png"} alt=""/></a> */}
                                 <h4>The Pictograph</h4>
-                                <p>
-                                    The pictograph of the
-                                    archetype is coiled as a
-                                    symbol of python’s crushing
-                                    power which is depicted in
-                                    its multiple loops.
-                                    The ideographic
-                                    representation of these
-                                    loops also echo the cyclical
-                                    nature of life. 
-                                </p>
+                        <p>
+                            The pictograph of a leopard
+                            with a smiling human face
+                            represents the idea of a
+                            creature which traverses the
+                            human and animal form.
+                            It is the knowing smile of a
+                            guardian of ancient secrets,
+                            grave truths and esoteric
+                            knowledge
+                        </p>
                             {/* <a onClick={()=>this.openPDF()} className="btn btn-green">Full Report</a> */}
                         </div>
                             <div className="column">
-                                <h4>Divination</h4>
-                                <p>
-                                You are the Coiled Python.
-                                The Coiled Python is the
-                                primary symbol for great
-                                intuition, wisdom, and
-                                preparation.
-                                </p>
+                            <h4>Divination</h4>
+                        <p>
+                        You are the Laughing
+                        Leopard.
+                        The Laughing Leopard is
+                        the chief symbol for great
+                        strength, stealth, and vision
+                        </p>
                             </div>
                             <div className="column">
-                                <h4>Your Powers</h4>
-                                <p>
-                                    <ul>
-                                        <li>Intuition,</li>
-                                        <li>Preparation,</li>
-                                        <li>Greed,</li>
-                                        <li>Self absorbed,</li>
-                                        <li>Risk adverse.</li>
-                                    </ul>
-                                </p>
+                            <h4>Your Powers</h4>
+                        <p>
+                            <ul>
+                                <li>Courage</li>
+                                <li>Vision</li>
+                                <li>Recklessness</li>
+                                <li>Rigidity</li>
+                                <li>Confrontational</li>
+                            </ul>
+                        </p>
                             </div>
                             <div className="column">
-                                <h4>Defy Odds Shoes</h4>
-                                <p>
-                                We’ve designed a pair of
-                                shoes to provide a physical
-                                reminder of your distinct
-                                personality traits within an
-                                ancient African historical
-                                context to support your defy
-                                odds journey.
-                                </p>
+                            <h4>Defy Odds Shoes</h4>
+                        <p>
+                            We’ve designed a pair of
+                            shoes to provide a 
+                            physical
+                            reminder of your distinct
+                            personality traits within an
+                            ancient African historical
+                            context to support your defy
+                            odds journey  
+                        </p>
                             </div>
-                            <div className="column"></div>
+                            {/* <div className="column"></div> */}
+                        </div>
+                        <div className="button">
+                            <a href="" className="btn btn-black">Buy Full report</a>
+                            {/* <a onClick={()=>this.openPDF()} className="btn btn-black"> Buy Full Report</a> */}
                         </div>
                     </div>
-                </div>
-
-                <div className="button">
-                    <a href="" className="btn btn-black">Buy Full report</a>
                 </div>
 
                 <div className="collection-section">         
@@ -90,51 +105,21 @@ export class NewDesign extends Component {
                             objectFit: "cover",
                             transform: "translate(-50%, -50%)",
                             zIndex: "-1"
-
                         }}
                         >
                             <source src={marketclip} type="video/mp4"/>
                         </video>
-                        <div className="cardboards">
-                            <div className="card">
-                                <div className="imgDiv">
-                                    <img  src={python} alt='python shoe'
+                        <div className="shops">
+                            <div className="shop">
+                            <img  src={umbrella} alt='umbrella'
                                     style={{
-                                        width: "100%"}}/>
+                                        width: "60%"}}/>
                                 </div>
-                                <div className="label" style={{padding:"5px"}} >
-                                    <h3>Defy Python</h3>
-                                    <div style={{display:"flex", justifyContent:"space-between"}}>
-                                        <div >
-                                            <small>Starting at</small>
-                                            <h3>$600</h3>
-                                        </div>
-                                        <div>
-                                            <button className="btn">Bid Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div className="card">
-                                <div className="imgDiv">
-                                    <img src={python} alt='python shoe'
-                                    style={{
-                                        width: "100%",
-                                    }}/>
-                                </div>
-                                <div className="label" style={{padding:"5px"}} >
-                                    <h3>Exclusive Collection</h3>
-                                    <div style={{display:"flex",justifyContent:"space-between"}}>
-                                        <div>
-                                            <small>Starting at</small>
-                                            <h3>$500</h3>
-                                        </div>
-                                        <div>
-                                            <button className="btn">See More</button>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="shop">
+                                <img src={umbrella} alt='umbrella'
+                                        style={{
+                                            width: "60%",
+                                        }}/>
                             </div>
                         </div> 
                     </div>
