@@ -14,12 +14,13 @@
                 .columns{
                     display: flex;
                     height: calc((500 / 600) * 100vh);
-                    width: calc(100vw - ((50 / 1500) * 70vw));
+                    // width: calc(100vw - ((50 / 1500) * 100vw));
                     overflow-x: auto;
                     background: #F2F2F2;
                     opacity: 0.9;
                     border-radius: 6px;
                     padding: 10px;
+                    margin-right: -18px;
                     
 
 
@@ -29,17 +30,17 @@
                         background: #FFE2C5;
                         border-radius: 9px;
                         justify-content: center;
-                        margin-right: calc((10 / 1500) * 100vw);
-                        margin-top: 8px;
+                        margin-right: calc((10 / 600) * 100vw);
+                        margin-top: 10px;
                         opacity: 0.8;
 
                         h4{
-                            padding: 10px;
+                            padding: 12px;
                             text-align: center;
                         }
 
                         p{
-                            padding: 6px;
+                            padding: 8px;
                             text-align: center;
                         }
                     }
@@ -80,15 +81,27 @@
                     //     border-radius: 0 0 6px 6px;
                     // }
 
-                    .btn {
-                        background: black;
-                        border-radius: 26px;
-                        border: none;
-                        outline: none;
-                        color: #fff;
-                        font-size: 8px;
-                        width: 100px;
-                    }
+                    // .btm-btn-1 {
+                    //     background: black;
+                    //     border-radius: 26px;
+                    //     border: none;
+                    //     outline: none;
+                    //     color: #fff;
+                    //     // position: absolute;
+                    //     font-size: 8px;
+                    //     width: 100px;
+                    // }
+
+                    // .btm-btn-1{
+                    //     position:absolute;
+                    //     top: -10px;
+                    //     right: 12px
+                    // }
+
+                    // .btm-btn-2{
+                    //     position:absolute;
+                    //     top: -40px;
+                    // }
                 }
 
                 .collection{

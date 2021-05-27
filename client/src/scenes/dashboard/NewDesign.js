@@ -8,7 +8,7 @@ import SnakeOverview from "./SnakeOverview"
 import Leopard from "../../images/Leopard_back.png"
 import marketclip from './video/marketclip.mp4'
 import umbrella from './images/market-stall.png'
-import shoe from './images/shoe.png'
+import menu from './images/menu 1.png'
 
 
 export class NewDesign extends Component {
@@ -16,7 +16,11 @@ export class NewDesign extends Component {
         return (
             <div className="new-design">
                 <div className="gallery">
-                    <div className="container">                        
+                    <div className="container">
+                        <div>
+                            <img src={menu}/>
+                            <small style={{margin:"5px"}}>menu</small>
+                        </div>                        
                         <h1>You are a Laughing Leopard</h1>
                         {/* <SnakeOverview/> */}
                         <div className="columns">
@@ -27,8 +31,9 @@ export class NewDesign extends Component {
                                 left: "50%",
                                 width: "40%",
                                 height: "83%",
-                                transform: "translate(25%, -27%)",
-                                zIndex: "-1"
+                                transform: "translate(21%, -17%)",
+                                zIndex: "-1",
+                                borderRadius: "6px"
     
                             }}
                         />
@@ -114,12 +119,18 @@ export class NewDesign extends Component {
                             <img  src={umbrella} alt='umbrella'
                                     style={{
                                         width: "60%"}}/>
-                                </div>
+                            </div>
+                            <div>
+                                {/* <button>Buy Now</button> */}
+                            </div>
                             <div className="shop">
                                 <img src={umbrella} alt='umbrella'
                                         style={{
                                             width: "60%",
                                         }}/>
+                            </div>
+                            <div>
+                                {/* <button>Buy Now</button> */}
                             </div>
                         </div> 
                     </div>
