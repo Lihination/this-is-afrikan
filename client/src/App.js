@@ -22,6 +22,7 @@ import Privacy from './scenes/privacy/index';
 import Landing from './scenes/landing/Landing';
 import Client from 'shopify-buy';
 import Cart from './scenes/_layout/Cart';
+import Report from './scenes/dashboard/Report'
 import Overlay from './scenes/_layout/Overlay';
 import { Transition, TransitionGroup } from 'react-transition-group';
 var nextLocation = {};
@@ -270,7 +271,13 @@ class App extends Component {
                     />
                   </Dashboard>
                     
+                  <Route exact component={Report} path='/report'>
+                    render = {(history) => <ScrollToTop>
+                      <Report/>
                     
+                    </ScrollToTop>}
+                  
+                  </Route>  
                   </ScrollToTop>
                   } />
 

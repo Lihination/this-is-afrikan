@@ -1,0 +1,1284 @@
+#dashboard{
+
+    .new-design{
+        .gallery{
+            .container{
+                h1{
+                    font-size: 1.2vw;
+                    line-height: 29.26px;
+                    margin: calc((14 / 900) * 100vh) 0;
+                }
+
+                .options{
+                    display: grid;
+                    grid-template-columns: 17vw 17vw 17vw 17vw  ;
+                    grid-gap: 1vw;
+                    margin-left: -0.8vw;
+
+                    .option{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        height: 40vh;
+                        justify-content: space-between;
+                        padding: 23px 18px;
+                        background: rgba(0, 81, 57, 0.7);
+                        border-radius: 5px;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        .shoe{
+                            width: 50px;
+                            height: 50px;
+                            margin-bottom: 0;
+                        }
+
+                        h4{
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            width: 100%;
+                            color: #fff;
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 1.2vw;
+                            line-height: 1.3vw;
+                        }
+
+                        p{
+                            width: 90%;
+                            height: 307px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 2px;
+                            font-size: 1vw;
+                            line-height: calc((24 / 900) * 100vh);
+                            // font-weight: bold;
+                            text-align: center;
+                            color: #FFFFFF;
+                        }
+
+                        ul{
+                            list-style: disc;
+                            width: 100%;
+                            margin-left: 1vw;
+
+                            li{
+                                text-align: left;
+                            }
+                        }
+
+                        .btn{
+                            width: calc((300 / 1500) * 100vw);
+                            // height: 50px;
+                            border-radius: 5px;
+                            background: #000;
+                            display: flex;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 15px;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button{
+            margin-top: calc((43 / 900) * 100vh);
+            margin-bottom: calc((47 / 900) * 100vh);
+            display: flex;
+            justify-content: center;
+            .btn{
+                // border-radius: 50px;
+            }
+        }
+
+        .collection-section{
+            h2{
+                padding-left: 50px;
+                font-size: 1.2vw;
+                line-height: 29.26px;
+                margin-bottom: calc((47 / 900) * 100vh);
+            }
+
+            .collections{
+                position: relative;
+                width: 100vw;
+                height: calc((723 / 900) * 100vh);
+                // padding-top: 50px;
+
+                small{
+                    position: absolute;
+                    top: 50px;
+                    left: 50px;
+                    font-size: 1vw;
+                }
+
+                h2{
+                    font-size: 1vw;
+                    margin-left: 50px;
+                }
+
+                .collection{
+                    display: none;
+                }
+
+                .ticks{
+                    position: absolute;
+                    bottom: calc((80 / 900) * 100vh);
+                    width: 100vw;
+                    display: flex;
+                    justify-content: center;
+
+                    li{
+                        width: calc((15 / 900) * 100vh);
+                        height: calc((15 / 900) * 100vh);
+                        border-radius: 50%;
+                        background: #FFCA95;
+                        margin: 0 calc((5 / 1500) * 100vw);
+                    }
+
+                    li.active{
+                        background-color: #000;
+                    }
+                }
+
+                .collection.active{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    overflow: hidden;
+                    left: 0;
+                    width: 100vw;
+                    height: 100%;
+
+                    .shoe{
+                        position: absolute;
+                        // transform: rotate(22.5deg);
+                        top: -10vh;
+                        left: -2.5vw;
+                    }
+
+                    .alternate{
+                        position: absolute;
+                        right: 0;
+                        bottom: -2.5vh;
+                    }
+
+                    .info{
+                        position: absolute;
+                        bottom: calc((17 / 900) * 100vh);
+                        left: calc((220/1500) * 100vw);
+
+                        h3{
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.2vw;
+                            line-height: calc((37 / 900) * 100vh);
+                        }
+
+                        h6{
+                            font-weight: 300;
+                            font-size: 1vw;
+                            margin: 0;
+                            line-height: calc((17 / 900) * 100vh);
+                        }
+                        h2{
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 1.2vw;
+                            line-height: calc((44 / 900) * 100vh);
+                        }
+                    }
+                }
+
+                .background{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #fff0E0;
+                    z-index: -2;
+                    padding-left: calc((191/1500) * 100vw);
+                    display: flex;
+                    align-items: center;
+
+                    .inner{
+                        width: calc((500 / 900) * 100vh);
+                        height: calc((500 / 900) * 100vh);
+                        border-radius: 25px;
+                        background-color: #FFE2C5;
+                    }
+                }
+
+
+
+                .left-arrow{
+                    position: absolute;
+                    height: 100%;
+                    left: calc((41/1500)*100vw);
+                    display: flex;
+                    align-items: center;
+
+                    svg{
+                        width: calc((50 / 900) * 100vh);
+                        height: calc((50 / 900) * 100vh);
+                    }
+                }
+
+                .right-arrow{
+                    position: absolute;
+                    height: 100%;
+                    left: calc((100vw - (40/1500)*100vw) / 2);
+                    display: flex;
+                    align-items: center;
+
+                    svg{
+                        width: calc((50 / 900) * 100vh);
+                        height: calc((50 / 900) * 100vh);
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 81.5vh;
+
+        .defy-left{
+            position: relative;
+            width: calc((400 / 1500) * 100%);
+            height: 100%;
+            // background: #005139;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: flex-start;
+            // padding: 0 calc((35 / 1500) * 100vw);
+
+            svg{
+                position: absolute;
+                top: calc((47/900) * 100vh);
+                left: calc((10/1500) * 100vw);
+                width: calc((87/900) * 100vh);
+                height: calc((87/900) * 100vh);
+                path{
+                    fill: #fff;
+                    ;
+                }
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin-top: 150px;
+                li{
+                    display: inline-block;
+                    // padding: 14px 0;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    // width: 70%;
+
+                    margin: 14px 20px;
+                    a{
+                        font-family: "Montserrat";
+                        font-weight: normal;
+                        font-size: 1vw;
+                        line-height: 21.94px;
+                        color: #a9a9a9;
+                    }
+                }
+
+                li.active{
+                    // background: #fff;
+                    // border-top-left-radius: 9px;
+                    // border-bottom-left-radius: 9px;
+                    position: relative;
+
+                    // &:before{
+                    //     position: absolute;
+                    //     content: "";
+                    //     right: -56px;
+                    //     top: 0;
+                    //     border-left: 36px solid #fff;
+                    //     border-right: 20px solid transparent;
+                    //     border-bottom: 20px solid transparent;
+                    //     border-top: 23px solid transparent;
+                    //     display: inline-block;
+                    // }
+
+                    a{
+                    font-weight: bold;
+                    border-bottom: 3px solid #fff;
+                    padding-bottom: 10px;
+                    color: #fff;
+                    font-size: 1.2vw;
+                    line-height: 29.26px;
+                    }
+                }
+            }
+        }
+
+        .defy-right{
+            width: calc((1100 / 1500) * 100%);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background: #007553;
+            position: relative;
+
+            .transparent{
+                display: none;
+            }
+
+            .background{
+                width: 100%;
+                height: 100%;
+                background: #007553;
+                position: absolute;
+                top: 0;
+                z-index: -2;
+                left: 0;
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                }
+            }
+            .back{
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                svg{
+                    width: 30px;
+                    height: 30px;
+
+                    fill: #fff;
+
+                    path{
+                        fill: #fff;
+                    }
+                }
+
+                span{
+                    margin-left: 0.5rem;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+
+            .overview{
+                // padding: 5vh 1vw;
+                height: 100%;
+                // width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                h3{
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 1.2vw;
+                    line-height: 1.3vw;
+                    margin-top: 5vh;
+                    margin-bottom: 4vh;
+                    color: #fff;
+                    width: 100%;
+                }
+
+                .options{
+                    display: grid;
+                    grid-template-columns: 17vw 17vw 17vw 17vw  ;
+                    grid-gap: 1vw;
+                    margin-left: -0.8vw;
+
+                    .option{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        height: 40vh;
+                        justify-content: space-between;
+                        padding: 23px 18px;
+                        background: rgba(0, 81, 57, 0.7);
+                        border-radius: 5px;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        .shoe{
+                            width: 50px;
+                            height: 50px;
+                            margin-bottom: 0;
+                        }
+
+                        h4{
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            width: 100%;
+                            color: #fff;
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 1.2vw;
+                            line-height: 1.3vw;
+                        }
+
+                        p{
+                            width: 90%;
+                            height: 307px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 2px;
+                            font-size: 1vw;
+                            line-height: calc((24 / 900) * 100vh);
+                            // font-weight: bold;
+                            text-align: center;
+                            color: #FFFFFF;
+                        }
+
+                        ul{
+                            list-style: disc;
+                            width: 100%;
+                            margin-left: 1vw;
+
+                            li{
+                                text-align: left;
+                            }
+                        }
+
+                        .btn{
+                            width: calc((300 / 1500) * 100vw);
+                            // height: 50px;
+                            border-radius: 5px;
+                            background: #000;
+                            display: flex;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 15px;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .buttons{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin-top: 1vh;
+                    margin-bottom: 5vh;
+                    .btn{
+                        font-weight: bold;
+                        width: calc((300 / 1500) * 100vw);
+                        
+                    }
+                }
+            }
+
+            .fun-facts{
+                height: 100%;
+                width: 100%;
+                color: #000;
+                position: relative;
+                display: flex;
+                // flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .background{
+                    position: absolute;
+                    background: #fff;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -2;
+                }
+                .inner{
+                    width: 100%;
+                }
+
+                ol{
+                    margin-top: 0px;
+                }
+
+                .wrapper{
+                    width: 90%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+
+                    h4{
+                        margin-top: 2vw;
+                        margin-bottom: 1vw;
+                        font-size: 1.2vw;
+                    }
+                    // align-items: center;
+                    // justify-content: space-between;
+                }
+
+                li{
+                    margin-top: 0.5vw;
+                }
+
+                p{
+                    font-size: 1vw;
+                    line-height: calc((24 / 900) * 100vh);
+                    text-align: justify;
+                    margin-bottom: 1vw;
+
+                    a{
+                        color: blue;
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+
+            .learn-more{
+                height: 100%;
+                width: 100%;
+                color: white;
+                position: relative;
+                display: flex;
+                // flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .background{
+                    position: absolute;
+                    background: #005139;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -2;
+                }
+                .inner{
+                    width: 100%;
+                }
+
+                .left{
+                    width: 60%;
+                }
+
+                img{
+                    position: absolute;
+                    top: 5vh;
+                    right: 5vw;
+                    z-index: -1;
+                    // top: 5vw;
+                    width: 16vw;
+                }
+
+                .wrapper{
+                    width: 90%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+
+                    h4{
+                        margin-bottom: 1vw;
+                    }
+                    // align-items: center;
+                    // justify-content: space-between;
+                }
+                p{
+                    font-size: 1vw;
+                    line-height: calc((24 / 900) * 100vh);
+                    text-align: justify;
+                    margin-bottom: 1vw;
+
+                    a{
+                        font-weight: bold;
+                        text-decoration: underline;
+                        color: blue;
+                    }
+                }
+            }
+
+            .video-trailer{
+                background: #005139;
+                width: 100%;
+                height: 100%;
+                .back{
+                    display: flex;
+                    align-items: center;
+                    font-size: 1vw;
+                    line-height: calc((21.94 / 900) * 100vh);
+                    text-align: justify;
+                    padding-bottom: 1vw;
+                    color: white;
+                    font-weight: bold;
+    
+                    svg{
+                        width: 1vw;
+                        height: 1vw;
+                        fill: white;
+                        margin-right: 0.2vw;
+                    }
+                }
+
+                .video-player{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .shoes-page{
+                height: 100%;
+                width: 100%;
+                .nav-bars{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    background: #005139;
+                    li{
+                        height: calc((66 / 900) * 100vh);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        &:first-child.active{
+                            border-radius: 0px 25px 0px 0px;
+                        }
+                        &:nth-child(2).active{
+                            border-radius: 25px 25px 0px 0px;
+                        }
+                        &:nth-child(3).active{
+                            border-radius: 25px 0px 0px 0px;
+                        }
+                        &.active{
+                            background: #007553;
+                        }
+
+                        a{
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: bold;
+                            color: #FFFFFF;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.2vw;
+                            line-height: calc((29 / 900) * 100vh);
+                        
+
+                            span{
+                                width: 1.3vw;
+                                height: 1.3vw;
+                                margin-right: 0.65vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #000;
+                                border-radius: 0.65vw;
+                                font-size: small;
+                            }
+                        }
+                    }
+                }
+
+                .nav-contents{
+                    height: calc(100% - ((64 / 900) * 100vh));
+                    .nav-content{
+                        height: 100%;
+                        display: none;
+                        align-items: center;
+
+                        &.active{
+                            display: flex;
+                        }
+
+                        .shoes-section{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 100%;
+                            height: 90%;
+
+                            h1{
+                                color: #fff;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: bold;
+                                // margin-bottom: 1vw;margin-bottom: 1vw;
+                                text-transform: uppercase;
+                                font-size: 1.2vw;
+                                line-height: calc((29 / 900) * 100vh);
+                            }
+
+                            p{
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: normal;
+                                color: #FFFFFF;
+                                text-align: justify;
+                                font-size: 1vw;
+                                line-height: calc((24 / 900) * 100vh);
+                                a{
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                    text-decoration: underline;
+                                    color: blue;
+                                }
+                            }
+
+                            .wrapper{
+                                width: 90%;
+                                height: 60%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                margin-bottom: 1vh;
+    
+                                .left{
+                                    width: 40%;
+                                    height: 100%;
+                                    .inner{
+                                        position: relative;
+                                        height: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        h4{
+                                            position: absolute;
+                                            top: 1vw;
+                                            left: 1vw;
+                                            color: black;
+                                            font-weight: bold;
+                                            font-style: italic;
+                                        } 
+                                        .shoes-img{
+                                            // width: calc((280 / 900) * 100vh);
+                                            height: calc((280 / 900) * 100vh);
+                                            border-radius: 9px;
+                                            // margin-bottom: 1vw;
+                                        }
+
+                                        .gallery{
+                                            display: grid;
+                                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                                            grid-gap: 3vw;
+                                            img{
+                                                border-radius: 9px;
+                                                // width: calc((100% / 4) - 3vw);
+                                                width: 100%;
+                                                // height: 1.72vw;
+                                            }
+                                        }
+                                    }
+
+                                    h4{
+                                        font-size: 1vw;
+                                        color: #fff;
+                                        font-weight: normal;
+                                    }
+                                }
+
+                                .right{
+                                    width: 55%;
+                                    height: 100%;
+
+                                    .inner{
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                    }
+                                }
+                            }
+
+                            .bottom{
+                                display: flex;
+                                justify-content: center;
+                                .wrapper{
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    p{
+                                        margin-bottom: 1vw;
+                                        width: 100%;
+                                    }
+
+                                    .buttons{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        width: 100%;
+
+                                        h1{
+                                            width: calc((400/1500) * 100vw);
+                                            height: calc((70 / 900) * 100vh);
+                                            display: flex;
+                                            align-items: center;
+                                            font-size: 1.2vw;
+                                            background-color: #005139;
+                                    color: #fff;
+                                            line-height: calc((29 / 900) * 100vh);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .bid-section{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+
+                            .wrapper{
+                                width: 90%;
+                                height: 84%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                h4{
+                                    color: #FFFFFF;
+                                    font-size: 1vw;
+                                    line-height: calc((24 / 900) * 100vh);
+                                    font-weight: normal;
+                                    width: 100%;
+                                }
+
+                                h1{ 
+                                    color: #FFFFFF;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: calc((36 / 900) * 100vh);
+                                    line-height: calc((44 / 900) * 100vh);
+                                    
+                                }
+
+                                .bid-value{
+                                    background-color: #005139;
+                                    color: #fff;
+                                }
+
+                                ol{
+                                    margin: 0;
+                                }
+
+                                .buttons{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    width: 100%;
+
+                                    .btn{
+                                        width: calc((300 / 1500) * 100vw);
+                                    }
+
+                                    .btn.disabled{
+                                        background-color: #005139;
+                                        border: 2px solid #005139;
+                                    }
+                                }
+
+                                .lock-button{
+                                    .btn{
+                                        width: calc((434 / 1500) * 100vw);
+                                        height: calc((70 / 900) * 100vh);
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 1.2vw;
+                                        line-height: calc((29 / 900) * 100vh);
+                                    
+                                        &.disabled{
+                                            background: #005139;
+                                            border: 2px solid #005139;
+                                            color: #a9a9a9;
+                                        }
+                                    }
+                                }
+
+                                .prices{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    // margin-bottom: 1vw;
+
+                                    h3{
+                                        width: calc((110 / 1500) * 100vw);
+                                        border-radius: 0.65vw;
+                                        background: #005139;
+                                        padding: 0 0.5vw;
+                                        height: calc((70 / 900) * 100vh);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: calc((36 / 900) * 100vh);
+                                        line-height: calc((44 / 900) * 100vh);
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        color: #FFFFFF;
+
+                                        span{
+                                            font-size: calc((36 / 900) * 100vh);
+                                            line-height: calc((44 / 900) * 100vh);
+                                            font-family: "Montserrat";
+                                            font-style: normal;
+                                            font-weight: bold;
+                                            color: #FFFFFF;
+                                            // width: 2vw
+                                        }
+                                    }
+
+                                    .slider{
+                                        width: calc(100% - 400px);
+
+                                    }
+
+                                    .right, .left{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        width: calc((180 / 1500) * 100vw);
+                                        p{
+                                            font-size: calc((18 / 900) * 100vh);
+                                            line-height: calc((21.94 / 900) * 100vh);
+                                            font-family: "Montserrat";
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            color: #FFFFFF;
+                                            
+                                        }
+                                    }
+
+                                    .price{
+                                        width: calc((110 / 1500) * 100vw);
+                                        border-radius: 0.65vw;
+                                        background: #005139;
+                                        padding: 0 0.5vw;
+                                        height: calc((70 / 900) * 100vh);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        // justify-content: space-between;
+                                        font-size: calc((36 / 900) * 100vh);
+                                        line-height: calc((44 / 900) * 100vh);
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        color: #FFFFFF;
+    
+                                        span{
+                                            font-size: calc((36 / 900) * 100vh);
+                                            line-height: calc((44 / 900) * 100vh);
+                                            font-family: "Montserrat";
+                                            font-style: normal;
+                                            font-weight: bold;
+                                            color: #FFFFFF;
+                                            // width: 2vw
+                                        }
+                                        input{
+                                            border: none;
+                                            outline: none;
+                                            background: transparent;
+                                            // height: 100%;
+                                            color: white;
+                                            font-weight: bold;
+                                            font-family: "Montserrat";
+                                            padding-left: 0;
+                                            padding-right: 0;
+                                            // margin-left: 0.25vw;
+                                            font-size: calc((36 / 900) * 100vh);
+                                            line-height: calc((44 / 900) * 100vh);
+                                            max-width: calc(100% - 2vw);
+                                        }
+                                    }
+                                }
+
+                                .countdown{
+                                    width: 70%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    h2{
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        color: #FFFFFF;
+                                        font-weight: bold;
+                                        font-size: 1.2vw;
+                                        line-height: calc((29 / 900) * 100vh);
+                                    }
+                                    ul{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 60%;
+                                        margin-top: 1vw;
+            
+                                        li{
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: center;
+                                            .value{
+                                                width: calc((70 / 900) * 100vh);
+                                                height: calc((70 / 900) * 100vh);
+                                                border-radius: 9px;
+                                                background: rgba(0, 0, 0, 0.25);
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                margin-bottom: 1rem;
+                                                h1{
+                                                    font-family: "Montserrat";
+                                                    font-style: normal;
+                                                    font-weight: bold;
+                                                    color: #FFFFFF;
+                                                    font-size: calc((36 / 900) * 100vh);
+                                                    line-height: calc((44 / 900) * 100vh);
+                                                }
+                                            }
+                                            p{
+                                                font-family: "Montserrat";
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                color: #FFFFFF;
+                                                font-size: calc((18 / 900) * 100vh);
+                                                line-height: calc((21.94 / 900) * 100vh);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .review-section{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+
+                            .wrapper{
+                                width: 90%;
+                                height: 90%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .answer-in-review{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    p{
+                                        font-size: (18 / 900) * 100vh;
+                                        line-height: (21.94 / 900) * 100vh;
+                                        color: #fff;
+                                    }
+
+                                    .price{
+                                        width: calc((110 / 1500) * 100vw);
+                                        border-radius: 0.65vw;
+                                        background: #005139;
+                                        padding: 0 0.5vw;
+                                        height: calc((70 / 900) * 100vh);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: calc((36 / 900) * 100vh);
+                                        line-height: calc((44 / 900) * 100vh);
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        color: #FFFFFF;
+
+                                        span{
+                                            font-size: calc((36 / 900) * 100vh);
+                                            line-height: calc((44 / 900) * 100vh);
+                                            font-family: "Montserrat";
+                                            font-style: normal;
+                                            font-weight: bold;
+                                            color: #FFFFFF;
+                                            // width: 2vw
+                                        }
+                                    }
+                                }
+                                .sizes-body{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    h4{
+                                        font-size: 1.2vw;
+                                        font-weight: normal;
+                                        margin-bottom: 1vw;
+                                        color: #fff;
+                                    }
+                                }
+                                ul{
+                                    // display: grid;
+                                    display: flex;
+                                    align-items: center;
+                                    grid-gap: 1rem;
+                                    // width: 50%;
+                                    li{
+                                        width: 2vw;
+                                        height: 2vw;
+                                        margin: 0 0.5vw;
+                                        border-radius: 25px;
+                                        border: 1px solid #fff;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+    
+                                        a{
+                                            font-weight: 400;
+                                            font-size: 1vw;
+                                            color: #fff;
+                                            // line-height: 21.94px;
+                                        }
+                                    }
+    
+                                    li.active{
+                                        border: 2px solid #fff;
+                                        background: #fff;
+                                        width: 2.25vw;
+                                            height: 2.25vw;
+    
+                                        a{
+                                            
+                                            color: #222;
+                                        }
+                                    }
+                                }
+
+                                h1{
+                                    margin: calc((10 / 900) * 100vh) 0;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 1.2vw;
+                                    line-height: 29.26px;                                
+                                    color: hsl(0, 0%, 100%);
+                                }
+
+                                .row{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin: 1vw 0;
+
+                                    .form-group{
+                                        width: 48%;
+                                        label{
+                                            font-family: "Montserrat";
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            color: #FFFFFF;
+                                            font-size: calc((18 / 900) * 100vh);
+                                            line-height: calc((21.94 / 900) * 100vh);
+                                        }
+
+                                        .form-control.disabled{
+                                            background-color: #ccc;
+                                        }
+
+                                        .form-control{
+                                            width: 100%;
+                                            background-color: #FFFFFF;
+                                            border-radius: 5px;
+                                            display: flex;
+                                            // height: 100%;
+                                            align-items: center;
+                                            margin-top: calc((9 / 900) * 100vh);
+                                            padding-left: 1vw;
+                                            input{
+                                                width: 90%;
+                                                border: none;
+                                                background-color: transparent;
+                                                font-family: "Montserrat";
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                color: #000;
+                                                font-size: calc((18 / 900) * 100vh);
+                                                line-height: calc((29 / 900) * 100vh);
+                                                min-height: calc((50 / 900) * 100vh);
+                                                outline: none;
+                                            }
+
+
+                                            a{
+                                                width: 10%;
+                                                height: 6vh;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+
+                                                &:hover{
+                                                    background-color: #ccc;
+                                                }
+                                                &:active{
+                                                    background-color: #aaa;
+                                                }
+                                            }
+
+                                            svg{
+                                                fill: black;
+                                                width: 1.2vw;
+                                                height: 1.2vw;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .buttons{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    .btn{
+                                        width: calc((434 / 1500) * 100vw);
+                                        height: calc((70 / 900) * 100vh);
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 1.2vw;
+                                        line-height: calc((29 / 900) * 100vh);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
